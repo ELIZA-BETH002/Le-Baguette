@@ -7,3 +7,5 @@ export default function Avatar({ src }) { return <img src={src} className="avata
 Avatar.propTypes = {
   // TODO: define props
 };
+
+// 🥖

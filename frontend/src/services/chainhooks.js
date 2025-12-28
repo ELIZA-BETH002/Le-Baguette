@@ -1,3 +1,7 @@
+/**
+ * Service: chainhooks
+ * Handles external integrations
+ */
 // import { ChainhooksClient } from '@hirosystems/chainhooks-client';
 
 // Placeholder for chainhooks client implementation

@@ -19,3 +19,5 @@ export default function Toast({ msg, duration = 3000, onClose }) {
 Toast.propTypes = {
   // TODO: define props
 };
+
+// 🥖

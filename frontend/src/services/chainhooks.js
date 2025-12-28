@@ -15,3 +15,5 @@ export const initializeChainhooks = () => {
 
 
 // TODO: Implement global error handler wrapper
+
+// 🥖

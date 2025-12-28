@@ -50,3 +50,7 @@ if (action === 'create-pr') {
     runCommand(`git push -u origin ${branch}`);
     runCommand(`gh pr create --title "${param}" --body "Automated PR for ${param}"`);
 }
+
+if (action === 'merge-pr') {
+    runCommand('gh pr merge --merge --auto');
+}

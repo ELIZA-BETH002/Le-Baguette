@@ -7,3 +7,5 @@ export default function Divider() { return <hr className="divider" />; }
 Divider.propTypes = {
   // TODO: define props
 };
+
+// 🥖

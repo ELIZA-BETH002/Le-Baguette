@@ -1,35 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import WalletConnect from './components/WalletConnect';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="app-container">
+      <nav className="glass-card navbar">
+        <h1 className="logo">🥖 Le Baguette</h1>
+        <div className="nav-actions">
+          <WalletConnect />
+        </div>
+      </nav>
+
+      <main className="hero">
+        <div className="hero-content">
+          <h2 className="title-gradient">Freshly Baked Stacks</h2>
+          <p className="subtitle">The tastiest DeFi protocol securely built on Bitcoin.</p>
+          <div className="cta-group">
+            <button className="secondary-btn">Explore Menu</button>
+            <button className="primary-btn">Start Baking</button>
+          </div>
+        </div>
+
+        <div className="glass-card feature-card">
+          <h3>Stats</h3>
+          <p>TVL: $1,000,000</p>
+        </div>
+      </main>
+    </div>
+  );
 }
 
-export default App
+export default App;

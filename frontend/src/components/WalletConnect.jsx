@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from "react";
 import { showConnect } from "@stacks/connect";
 import { userSession } from "../utils/auth";

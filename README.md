@@ -143,3 +143,5 @@ On secondary transfers, 5% of the transaction is sent to the contract owner.
 
 ## **License**
 This contract is open-source under the MIT License. Feel free to fork and adapt it for your own projects.
+
+// 🥖

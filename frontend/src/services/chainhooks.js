@@ -12,3 +12,6 @@ export const initializeChainhooks = () => {
     // const client = new ChainhooksClient();
     // return client;
 };
+
+
+// TODO: Implement global error handler wrapper

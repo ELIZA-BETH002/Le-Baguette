@@ -40,3 +40,13 @@ if (action === 'commit') {
     runCommand(`git add .`);
     runCommand(`git commit -m "${param}"`);
 }
+
+if (action === 'create-pr') {
+    if (!param) {
+        console.error("Please provide PR title");
+        process.exit(1);
+    }
+    const branch = runCommand('git rev-parse --abbrev-ref HEAD');
+    runCommand(`git push -u origin ${branch}`);
+    runCommand(`gh pr create --title "${param}" --body "Automated PR for ${param}"`);
+}

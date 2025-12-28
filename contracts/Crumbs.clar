@@ -32,3 +32,23 @@
 (define-read-only (get-decimals)
     (ok u6)
 )
+
+(define-read-only (get-balance (who principal))
+    (ok (ft-get-balance crumbs who))
+)
+
+(define-read-only (get-total-supply)
+    (ok (ft-get-supply crumbs))
+)
+
+(define-read-only (get-token-uri)
+    (ok (var-get token-uri))
+)
+
+(define-public (set-token-uri (value (string-utf8 256)))
+    (begin
+        (asserts! (is-eq tx-sender contract-owner) err-owner-only)
+        (var-set token-uri (some value))
+        (ok true)
+    )
+)

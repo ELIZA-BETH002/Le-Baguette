@@ -31,3 +31,12 @@ if (action === 'create-branch') {
     }
     runCommand(`git checkout -b ${param}`);
 }
+
+if (action === 'commit') {
+    if (!param) {
+        console.error("Please provide commit message");
+        process.exit(1);
+    }
+    runCommand(`git add .`);
+    runCommand(`git commit -m "${param}"`);
+}

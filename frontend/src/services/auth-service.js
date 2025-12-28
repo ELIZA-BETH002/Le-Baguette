@@ -1,8 +1,8 @@
 /**
- * Service: api
+ * Service: auth-service
  * Handles external integrations
  */
-export const fetcher = (url) => fetch(url).then(res => res.json());
+export const login = () => { /* login */ };
 
 // TODO: Implement global error handler wrapper
 

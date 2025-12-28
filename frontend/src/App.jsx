@@ -1,10 +1,23 @@
+import { useState, useEffect } from 'react';
+import { watchMintEvents } from './services/chainhooks';
+import Toast from './components/Toast';
 import React from 'react';
 import WalletConnect from './components/WalletConnect';
 import './App.css';
 
 function App() {
+  const [lastEvent, setLastEvent] = useState(null);
+
+  useEffect(() => {
+    watchMintEvents((event) => {
+      console.log('Chainhook Event:', event);
+      setLastEvent(event);
+    });
+  }, []);
+
   return (
     <div className="app-container">
+      {lastEvent && <Toast msg={"New Baguette Minted: #" + lastEvent.tokenId} />}
       <nav className="glass-card navbar">
         <h1 className="logo">🥖 Le Baguette</h1>
         <div className="nav-actions">

@@ -1,8 +1,8 @@
 /**
- * Service: api
+ * Service: analytics
  * Handles external integrations
  */
-export const fetcher = (url) => fetch(url).then(res => res.json());
+export const track = (event) => console.log("Tracking", event);
 
 // TODO: Implement global error handler wrapper
 

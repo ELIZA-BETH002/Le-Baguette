@@ -1,1 +1,11 @@
+/**
+ * Divider Component
+ */
+import PropTypes from 'prop-types';
 export default function Divider() { return <hr className="divider" />; }
+
+Divider.propTypes = {
+  // TODO: define props
+};
+
+// 🥖

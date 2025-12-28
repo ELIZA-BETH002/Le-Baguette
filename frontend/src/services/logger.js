@@ -1,8 +1,8 @@
 /**
- * Service: api
+ * Service: logger
  * Handles external integrations
  */
-export const fetcher = (url) => fetch(url).then(res => res.json());
+export const log = (msg) => console.log(msg);
 
 // TODO: Implement global error handler wrapper
 

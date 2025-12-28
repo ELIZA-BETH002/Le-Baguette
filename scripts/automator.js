@@ -14,3 +14,12 @@ function runCommand(command) {
         process.exit(1);
     }
 }
+
+const args = process.argv.slice(2);
+const action = args[0];
+const param = args[1];
+
+if (!action) {
+    console.log("Usage: node automator.js <action> [param]");
+    process.exit(1);
+}

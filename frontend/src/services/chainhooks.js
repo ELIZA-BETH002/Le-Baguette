@@ -13,3 +13,19 @@ export const client = new ChainhooksClient({
 export const initChainhooks = () => {
     // console.debug('Initializing Chainhooks...');
 };
+
+/**
+ * Watch for NFT mint events
+ * @param {Function} callback 
+ */
+export const watchMintEvents = (callback) => {
+    // Placeholder for actual WebSocket subscription
+    // client.subscribe('nft-mint', (event) => {
+    //     callback(event);
+    // });
+    
+    // Simulating event for development
+    setTimeout(() => {
+        callback({ type: 'mint', tokenId: 1, recipient: 'ST1...' });
+    }, 5000);
+};

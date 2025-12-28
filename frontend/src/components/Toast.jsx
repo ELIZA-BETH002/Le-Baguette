@@ -7,3 +7,5 @@ export default function Toast({ msg }) { return <div className="toast">{msg}</di
 Toast.propTypes = {
   // TODO: define props
 };
+
+// 🥖

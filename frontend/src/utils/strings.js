@@ -1,3 +1,4 @@
+// Ensuring named exports structure
 /**
  * Utility: strings
  * Helper functions

@@ -1,3 +1,7 @@
+/**
+ * Utility: contract-helpers
+ * Helper functions
+ */
 import { uintCV, stringUtf8CV, trueCV, falseCV } from '@stacks/transactions';
 
 export const createUint = (value) => uintCV(value);

@@ -1,3 +1,6 @@
+/**
+ * WalletConnect Component
+ */
 import PropTypes from 'prop-types';
 import React from "react";
 import { showConnect } from "@stacks/connect";

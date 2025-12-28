@@ -17,3 +17,8 @@ strict = false
 trusted_sender = false
 trusted_caller = false
 callee_filter = false
+
+[contracts.Crumbs]
+path = 'contracts/Crumbs.clar'
+clarity_version = 4
+epoch = "3.3"

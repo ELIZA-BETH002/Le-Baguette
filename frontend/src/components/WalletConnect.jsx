@@ -1,3 +1,7 @@
+/**
+ * WalletConnect Component
+ */
+import PropTypes from 'prop-types';
 import React from "react";
 import { showConnect } from "@stacks/connect";
 import { userSession } from "../utils/auth";
@@ -36,3 +40,10 @@ const WalletConnect = () => {
 };
 
 export default WalletConnect;
+
+
+WalletConnect.propTypes = {
+  // TODO: define props
+};
+
+// 🥖

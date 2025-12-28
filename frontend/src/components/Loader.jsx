@@ -7,3 +7,5 @@ export default function Loader() { return <div className="spinner">Loading...</d
 Loader.propTypes = {
   // TODO: define props
 };
+
+// 🥖

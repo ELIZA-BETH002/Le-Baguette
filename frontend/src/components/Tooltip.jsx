@@ -7,3 +7,5 @@ export default function Tooltip({ text }) { return <div className="tooltip">{tex
 Tooltip.propTypes = {
   // TODO: define props
 };
+
+// 🥖

@@ -1,19 +1,31 @@
+import { ChainhooksClient } from '@hirosystems/chainhooks-client';
+
+const API_KEY = import.meta.env.VITE_CHAINHOOKS_API_KEY;
+
+export const client = new ChainhooksClient({
+    apiKey: API_KEY,
+    network: 'testnet' 
+});
+
 /**
- * Service: chainhooks
- * Handles external integrations
+ * Initialize Chainhooks connection
  */
-// import { ChainhooksClient } from '@hirosystems/chainhooks-client';
-
-// Placeholder for chainhooks client implementation
-// TODO: Configure API key and endpoints
-
-export const initializeChainhooks = () => {
-    console.log('Initializing Chainhooks Client...');
-    // const client = new ChainhooksClient();
-    // return client;
+export const initChainhooks = () => {
+    // console.debug('Initializing Chainhooks...');
 };
 
-
-// TODO: Implement global error handler wrapper
-
-// 🥖
+/**
+ * Watch for NFT mint events
+ * @param {Function} callback 
+ */
+export const watchMintEvents = (callback) => {
+    // Placeholder for actual WebSocket subscription
+    // client.subscribe('nft-mint', (event) => {
+    //     callback(event);
+    // });
+    
+    // Simulating event for development
+    setTimeout(() => {
+        callback({ type: 'mint', tokenId: 1, recipient: 'ST1...' });
+    }, 5000);
+};

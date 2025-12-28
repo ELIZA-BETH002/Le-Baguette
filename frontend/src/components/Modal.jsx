@@ -7,3 +7,5 @@ export default function Modal({ isOpen, children }) { return isOpen ? <div class
 Modal.propTypes = {
   // TODO: define props
 };
+
+// 🥖

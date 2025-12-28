@@ -1,0 +1,1 @@
+export const track = (event) => console.log("Tracking", event);

@@ -1,17 +1,15 @@
+import { ChainhooksClient } from '@hirosystems/chainhooks-client';
+
+const API_KEY = import.meta.env.VITE_CHAINHOOKS_API_KEY;
+
+export const client = new ChainhooksClient({
+    apiKey: API_KEY,
+    network: 'testnet' 
+});
+
 /**
- * Service: chainhooks
- * Handles external integrations
+ * Initialize Chainhooks connection
  */
-// import { ChainhooksClient } from '@hirosystems/chainhooks-client';
-
-// Placeholder for chainhooks client implementation
-// TODO: Configure API key and endpoints
-
-export const initializeChainhooks = () => {
-    console.log('Initializing Chainhooks Client...');
-    // const client = new ChainhooksClient();
-    // return client;
+export const initChainhooks = () => {
+    // console.debug('Initializing Chainhooks...');
 };
-
-
-// TODO: Implement global error handler wrapper

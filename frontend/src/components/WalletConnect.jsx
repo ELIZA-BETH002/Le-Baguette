@@ -40,3 +40,8 @@ const WalletConnect = () => {
 };
 
 export default WalletConnect;
+
+
+WalletConnect.propTypes = {
+  // TODO: define props
+};

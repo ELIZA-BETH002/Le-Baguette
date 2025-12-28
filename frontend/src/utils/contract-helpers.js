@@ -1,3 +1,4 @@
+// Ensuring named exports structure
 /**
  * Utility: contract-helpers
  * Helper functions

@@ -23,3 +23,11 @@ if (!action) {
     console.log("Usage: node automator.js <action> [param]");
     process.exit(1);
 }
+
+if (action === 'create-branch') {
+    if (!param) {
+        console.error("Please provide branch name");
+        process.exit(1);
+    }
+    runCommand(`git checkout -b ${param}`);
+}
